@@ -113,7 +113,7 @@ const FormRequest = ({ formData, setFormData, setOpenModal }) => {
               name='startingDate'
               autoComplete='off'
               required
-              value={formData.requestDate}
+              value={formData.startingDate}
               onChange={handleChange}
             />
           </div>
