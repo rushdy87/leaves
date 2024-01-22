@@ -1,0 +1,116 @@
+.form-requiest {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 20px;
+  background-color: #dfdfdf;
+  border: 2px solid #1877f2;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.form-requiest_title {
+  font-size: 2rem;
+  color: #1877f2;
+}
+
+.form-requiest_form_container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 50px;
+  column-gap: 10px;
+  row-gap: 30px;
+  width: 100vw;
+  margin: 10px auto;
+  justify-items: center;
+}
+
+.form-requiest_input {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.form-requiest_input label {
+  font-size: 1.2rem;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.form-requiest_input input,
+.form-requiest_input select {
+  width: 250px;
+  height: 35px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 1.2rem;
+}
+
+.form-requiest_input input[type='date'] {
+  padding: 16px;
+  font-size: 1rem;
+}
+
+/* Style the date input */
+input[type='date'] {
+  appearance: none; /* Hide the browser's default appearance */
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* Style the date picker button */
+input[type='date']::-webkit-calendar-picker-indicator {
+  background-color: transparent; /* Hide the default button */
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  padding: 0;
+}
+
+.form-requiest_input select {
+  padding: 0;
+}
+
+.form-requiest_btn {
+  width: 100px;
+  padding: 0.5rem 1.5rem;
+  border-radius: 10px;
+  background-color: #dfdfdf;
+  color: #1877f2;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: 500;
+  display: block;
+  margin: 20px auto;
+}
+.form-requiest_btn:hover {
+  -moz-transform: scale(1.15);
+  -webkit-transform: scale(1.15);
+  -o-transform: scale(1.15);
+  -ms-transform: scale(1.15);
+  -webkit-transform: scale(1.15);
+  transform: scale(1.15);
+
+  -webkit-transition: transform 1.05s ease-in-out;
+  -moz-transition: transform 1.05s ease-in-out;
+  -ms-transition: transform 1.05s ease-in-out;
+  background-color: #1877f2;
+  color: #dfdfdf;
+}
+
+@media (min-width: 480px) {
+  .form-requiest {
+    width: 80vw;
+    margin: 20px auto;
+  }
+
+  .form-requiest_form_container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
