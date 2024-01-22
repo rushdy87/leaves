@@ -1,0 +1,16 @@
+.print-priview {
+  height: 90vh;
+  overflow: scroll;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.print-actions {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.print-actions_btn {
+  width: 60px;
+}

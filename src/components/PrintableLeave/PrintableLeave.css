@@ -1,0 +1,87 @@
+.paper {
+  /* A5 dimensions */
+  height: 210mm;
+  width: 148.5mm;
+  background-color: #fff;
+  margin: 24px;
+  font-size: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.paper_ref {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+}
+
+.paper_title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+.employee_info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.employee_info_right,
+.employee_info_left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 80px;
+}
+
+.employee_info_name,
+.employee_info_department,
+.employee_info_request_date,
+.employee_info_record_number,
+.employee_info_job_title,
+.paper_duration,
+.paper_starting_date {
+  display: flex;
+  flex-direction: row;
+  gap: 3px;
+}
+
+.paper_employee_signature {
+  text-align: left;
+}
+
+.paper_acception_signature,
+.paper_financial_signature {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 70px;
+}
+
+.paper_financial_department {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.paper_hr {
+  width: 100%;
+  height: 1px;
+  border: 1px solid #000000;
+}
+.blank {
+  padding: 5px 40px;
+}

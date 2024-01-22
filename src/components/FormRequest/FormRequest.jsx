@@ -1,18 +1,6 @@
-import { useState } from 'react';
 import './FormRequest.css';
 
-const FormRequest = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    requestDate: new Date().toISOString().slice(0, 10),
-    recordNumber: '',
-    department: 'شعبة الاستلام والتجهيز',
-    jobTitle: '',
-    leaveType: 'اجازة اعتيادية',
-    startingDate: new Date().toISOString().slice(0, 10),
-    duration: 1,
-  });
-
+const FormRequest = ({ formData, setFormData, setOpenModal }) => {
   const handleChange = (event) => {
     if (event.target.name === 'recordNumber') {
       if (!isNaN(event.target.value)) {
@@ -33,7 +21,7 @@ const FormRequest = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log(formData);
+    setOpenModal(true);
   };
 
   return (
