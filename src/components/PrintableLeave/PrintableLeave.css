@@ -1,13 +1,13 @@
 .paper {
   /* A5 dimensions */
-  height: 210mm;
-  width: 148.5mm;
+  /* height: 210mm;
+  width: 148.5mm; */
   background-color: #fff;
-  margin: 24px;
-  font-size: 22px;
+  margin: 0 16px;
+  font-size: 20px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 18px;
   font-family: 'Times New Roman', Times, serif;
 }
 
@@ -64,7 +64,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  margin-top: 70px;
+  margin-top: 60px;
 }
 
 .paper_financial_department {

@@ -39,11 +39,11 @@ const PrintableLeave = ({ data }) => {
         </div>
       </div>
       <div className='paper_duration'>
-        <span>يرجى الموافقة على منحي اجازة اعتيادية لمدة</span>
+        <span>يرجى الموافقة على منحي اجازة اعتيادية لمدة:</span>
         <span>{dayInWritingMode(data.duration)}</span>
       </div>
       <div className='paper_starting_date'>
-        <span>اعتباراً من تاريخ</span>
+        <span>اعتباراً من تاريخ:</span>
         <span>{data.startingDate}</span>
       </div>
       <p className='paper_employee_signature'>توقيع طالب الاجازة</p>

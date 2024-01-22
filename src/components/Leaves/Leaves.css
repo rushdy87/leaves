@@ -4,6 +4,26 @@
   background-color: rgba(0, 0, 0, 0.05);
 }
 
+.print-paper {
+  width: 148mm; /* A5 paper width */
+  height: 210mm; /* A5 paper height */
+  padding: 10mm; /* Adding some padding for content */
+  margin: 0 auto; /* Center content horizontally on the page */
+
+  /* Additional styles for the print area */
+  background-color: white; /* Background color for the paper */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Optional: Add a shadow for visual separation */
+  overflow: hidden; /* Ensure content stays within the paper area */
+
+  /* You can add more styles to control font, margins, and other aspects */
+}
+
+@media print {
+  @page {
+    size: portrait;
+  }
+}
+
 .print-actions {
   display: flex;
   flex-direction: row;
